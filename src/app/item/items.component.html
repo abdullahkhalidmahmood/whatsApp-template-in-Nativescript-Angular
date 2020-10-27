@@ -1,0 +1,112 @@
+<ActionBar title="WhatsApp" class="action-bar">
+
+
+
+    <ActionItem text="New group" ios.systemIcon="7" class="action-item" android:visibility="collapse"
+        ios.position="right"></ActionItem>
+    <ActionItem text="New group" android.position="popup" class="action-item" ios:visibility="collapse"></ActionItem>
+    <ActionItem text="New broadcast" android.position="popup" class="action-item" ios:visibility="collapse">
+    </ActionItem>
+    <ActionItem text="WhatsApp Web" android.position="popup" class="action-item" ios:visibility="collapse"></ActionItem>
+    <ActionItem text="Starred messages" android.position="popup" class="action-item" ios:visibility="collapse">
+    </ActionItem>
+    <ActionItem text="Settings" android.position="popup" class="action-item" ios:visibility="collapse"></ActionItem>
+
+</ActionBar>
+
+
+<!-- <TabView
+selectedIndex="0"
+tabBackgroundColor = "#075E54"
+selectedTabTextColor="white" >
+
+
+    <StackLayout *tabItem="{title: 'CALLS'}">
+        <GridLayout>
+            <ListView [items]="items">
+                <ng-template let-item="item">
+                    <StackLayout orientation="horizontal">
+                        <Image [src]="item.image" class="profileImg" horizontalAlignment="left"></Image>
+                        <Label [nsRouterLink]="['/item', item.id]" [text]="item.name" class="chat"></Label>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+        </GridLayout>
+    </StackLayout>
+
+
+    <StackLayout *tabItem="{title: 'CHATS'}">
+        <StackLayout>
+            <Label text="Second Tab" textWrap="true" class="m-15 h2 text-left" color="blue"></Label>
+        </StackLayout>
+    </StackLayout>
+
+
+    <StackLayout *tabItem="{title: 'STATUS'}">
+        <StackLayout>
+            <Label text="Third Tab" textWrap="true" class="m-15 h2 text-left" color="blue"></Label>
+        </StackLayout>
+    </StackLayout>
+</TabView> -->
+
+
+
+<!-- Bottom navigation for iOS
+
+    1. figure out how to hide this in android and display only in ios -->
+
+<BottomNavigation>
+    <TabStrip>
+        <TabStripItem>
+            <Image src="font://&#xf810;" class="fas"></Image>
+            <Label text="Home"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="font://&#xf004;" class="fas"></Image>
+            <Label text="Favs"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="font://&#xf001;" class="fas"></Image>
+            <Label text="Music"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="font://&#xf1ea;" class="fas"></Image>
+            <Label text="News"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Image src="font://&#xf3c5;" class="fas"></Image>
+            <Label text="Places"></Label>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem>
+        <StackLayout>
+            <Label text="Bottom Nav Content 1" class="h1 text-center p-t-20"></Label>
+        </StackLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <StackLayout>
+            <Label text="Bottom Nav Content 2" class="h1 text-center p-t-20"></Label>
+        </StackLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <StackLayout>
+            <Label text="Bottom Nav Content 3" class="h1 text-center p-t-20"></Label>
+        </StackLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <StackLayout>
+            <Label text="Bottom Nav Content 4" class="h1 text-center p-t-20"></Label>
+        </StackLayout>
+    </TabContentItem>
+
+    <TabContentItem>
+        <StackLayout>
+            <Label text="Bottom Nav Content 5" class="h1 text-center p-t-20"></Label>
+        </StackLayout>
+    </TabContentItem>
+</BottomNavigation>
+
